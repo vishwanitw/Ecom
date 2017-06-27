@@ -1,0 +1,39 @@
+/*.navBackground{
+	background-color: #DA4B52;
+	padding: 4px 0px 3px 0;
+	min-height: 40px;
+}*/
+nav {
+	background-color: #DA4B52;
+	overflow: hidden;
+	/*padding: 1em;*/
+}
+.navFont, a{
+	color: #fff;
+	padding: 0px 9px 0px 2px;
+	position: relative;
+	 text-shadow: 0 1px 0 #FFF;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 13px;
+}
+ul li{
+	display: inline;
+	padding: 15px;
+}
+ .navBackground ul{
+	float: right;
+	padding: 5px;
+}
+
+/* category menu */
+
+.categoryMenu{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.paddingTop100 {
+	padding-top:100px;
+	background: #313131;
+}
