@@ -3,8 +3,8 @@ import React, { Component } from 'preact-compat'
 import HomeComponent from '../components/HomeComponent'
 import CategoriesListComponent from '../components/CategoriesListComponent'
 import NavbarComponent from '../components/NavbarComponent'
-import MainMenuCategoriesComponent from '../components/MainMenuCategoriesComponent'
-import MenuItems from '../components/MenuItemsComponent'
+import ProductListComponent from '../components/ProductListComponent'
+import HeaderContainer from '../containers/HeaderContainer'
 /*eslint-enable no-unused-vars */
 import { bindActionCreators } from 'redux';
 import { connect } from 'preact-redux';
@@ -21,9 +21,8 @@ class HomeContainer extends Component {
     return (
 			<div>
 				<HomeComponent />
-        <MenuItems />
         <NavbarComponent />
-        <MainMenuCategoriesComponent />
+        <HeaderContainer />
         <CategoriesListComponent  categories={this.props.data.categories.categories} />
 			</div>
 		);
