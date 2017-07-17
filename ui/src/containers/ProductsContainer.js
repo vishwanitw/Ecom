@@ -1,34 +1,31 @@
 /*eslint-disable no-unused-vars */
 import React, { Component } from 'preact-compat'
-import HomeComponent from '../components/HomeComponent'
-import CategoriesListComponent from '../components/CategoriesListComponent'
-import NavbarComponent from '../components/NavbarComponent'
 import ProductListComponent from '../components/ProductListComponent'
-import HeaderContainer from '../containers/HeaderContainer'
+import HeaderContainer from './HeaderContainer'
 import FooterContainer from './FooterContainer'
-import Carousel from '../components/Carousel'
-
 
 /*eslint-enable no-unused-vars */
 import { bindActionCreators } from 'redux';
 import { connect } from 'preact-redux';
 import * as actionCreators from '../actions/actions';
 
-class HomeContainer extends Component {
+
+
+class ProductsContainer extends Component {
   
-  componentDidMount() {
-    this.props.getCategories();
+  componentWillMount() {
+    this.props.getProducts();
+    // this.props.getAllCategories();
   }
 
   
   render() {
+    
     return (
 			<div>
-				{/*<HomeComponent />*/}
         <HeaderContainer />
-        <CategoriesListComponent  categories={this.props.data.categories.categories} />
+           <ProductListComponent products={this.props.data.products.products} />
         <FooterContainer />
-        <Carousel />
 			</div>
 		);
   }
@@ -44,4 +41,4 @@ function mapDispachToProps(dispatch) {
   return bindActionCreators(actionCreators, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispachToProps)(HomeContainer)
+export default connect(mapStateToProps, mapDispachToProps)(ProductsContainer)

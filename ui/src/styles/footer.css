@@ -1,0 +1,33 @@
+footer {
+    padding-top: 30px;
+    background-color: #111;
+    border-top: 1px solid #ddd;
+    color: #e2e2e2;
+}
+footer h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #eee;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+footer ul {
+    padding-left: 26px;
+    list-style: none;
+}
+footer a, footer a:hover {
+    color: #888;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none !important;    
+    line-height: 2.2;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.footer-list-item ul li a {
+    color: #888 !important;
+    text-decoration: none !important;
+}
